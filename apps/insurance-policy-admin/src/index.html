@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsuraSure Policy Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-brand">
+            <span class="logo-shield">🛡️</span>
+            <span class="brand-name">InsuraSure Policy Admin</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">Policies</a></li>
+            <li><a href="#">Claims</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Reports</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Search policies, IDs...">
+            </div>
+            <div class="notification">
+                <span class="bell">🔔</span>
+                <span class="dot"></span>
+            </div>
+            <div class="user-profile">
+                <div class="avatar"></div>
+                <span>Sarah Jenkins</span>
+                <span class="chevron">▼</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <header class="dashboard-header">
+            <span class="breadcrumb">Policy Dashboard</span>
+            <h1>Michael Chen - #POL-8839210-AL</h1>
+        </header>
+
+        <div class="two-column-layout">
+            <!-- Left Column: Core Data -->
+            <div class="main-content">
+                
+                <div class="summary-highlight-grid">
+                    <!-- Policy Summary Card -->
+                    <div class="card summary-card">
+                        <h2>Policy Summary</h2>
+                        <div class="summary-details">
+                            <div class="detail-group">
+                                <span>Status</span>
+                                <div class="badge badge-success">Active</div>
+                            </div>
+                            <div class="detail-group">
+                                <span>Type</span>
+                                <strong>Universal Life</strong>
+                            </div>
+                            <div class="detail-group">
+                                <span>Issue Date</span>
+                                <strong>Oct 12, 2021</strong>
+                            </div>
+                            <div class="detail-group">
+                                <span>Premium Mode</span>
+                                <strong>Monthly</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Stack -->
+                    <div class="highlight-stack">
+                        <div class="card highlight-card">
+                            <span>Face Amount</span>
+                            <h3>$500,000.00</h3>
+                        </div>
+                        <div class="card highlight-card">
+                            <span>Cash Value</span>
+                            <h3>$12,450.00</h3>
+                        </div>
+                        <div class="card highlight-card highlight-accent">
+                            <span>Next Premium Due</span>
+                            <h3>$245.50</h3>
+                            <span class="date">Due: May 12, 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transactions Table -->
+                <div class="card transactions-card">
+                    <div class="table-header">
+                        <h2>Transactions History</h2>
+                        <div class="table-actions">
+                            <button class="btn-icon">⚙️ Filter</button>
+                            <input type="text" placeholder="Search transactions...">
+                        </div>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Method</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apr 12, 2026</td>
+                                <td>Premium</td>
+                                <td>Monthly Auto-Pay</td>
+                                <td>$245.50</td>
+                                <td><span class="badge badge-success">Processed</span></td>
+                                <td>ACH - 4402</td>
+                            </tr>
+                            <tr>
+                                <td>Mar 12, 2026</td>
+                                <td>Premium</td>
+                                <td>Monthly Auto-Pay</td>
+                                <td>$245.50</td>
+                                <td><span class="badge badge-success">Processed</span></td>
+                                <td>ACH - 4402</td>
+                            </tr>
+                            <tr>
+                                <td>Feb 28, 2026</td>
+                                <td>Dividend</td>
+                                <td>Annual Dividend Credit</td>
+                                <td>$1,200.00</td>
+                                <td><span class="badge badge-neutral">Applied</span></td>
+                                <td>Account Credit</td>
+                            </tr>
+                            <tr>
+                                <td>Feb 12, 2026</td>
+                                <td>Premium</td>
+                                <td>Monthly Auto-Pay</td>
+                                <td>$245.50</td>
+                                <td><span class="badge badge-success">Processed</span></td>
+                                <td>ACH - 4402</td>
+                            </tr>
+                            <tr>
+                                <td>Jan 12, 2026</td>
+                                <td>Premium</td>
+                                <td>Monthly Auto-Pay</td>
+                                <td>$245.50</td>
+                                <td><span class="badge badge-success">Processed</span></td>
+                                <td>ACH - 4402</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table-footer">
+                        <span>Showing 1-5 of 48 transactions</span>
+                        <div class="pagination">
+                            <button disabled>&lt;</button>
+                            <button class="active">1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <span>...</span>
+                            <button>10</button>
+                            <button>&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Sidebar -->
+            <aside class="sidebar">
+                <!-- Owner Details -->
+                <div class="card profile-card">
+                    <div class="card-top">
+                        <h2>Owner Details</h2>
+                        <button class="edit-icon">✏️</button>
+                    </div>
+                    <div class="profile-header">
+                        <div class="profile-photo">MC</div>
+                        <div class="profile-titles">
+                            <h3>Michael Chen</h3>
+                            <span>Age 42 • Primary Insured</span>
+                        </div>
+                    </div>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon">📍</span>
+                            <span>1234 Silicon Valley Blvd, Apt 4C<br>San Jose, CA 95131</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📞</span>
+                            <span>(555) 019-2837</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">✉️</span>
+                            <span>m.chen@example.com</span>
+                        </li>
+                    </ul>
+                    <button class="btn-ghost">Edit Owner Details</button>
+                </div>
+
+                <!-- Agent Details -->
+                <div class="card profile-card">
+                    <div class="card-top">
+                        <h2>Agent Details</h2>
+                        <button class="edit-icon">✏️</button>
+                    </div>
+                    <div class="profile-header">
+                        <div class="profile-photo agent-photo">JW</div>
+                        <div class="profile-titles">
+                            <h3>James Wright</h3>
+                            <span>Agent ID: #AGT-0092B</span>
+                        </div>
+                    </div>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon">📍</span>
+                            <span>InsuraSure Regional Office<br>San Francisco, CA</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">📞</span>
+                            <span>(555) 882-1002</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">✉️</span>
+                            <span>j.wright@insurasure.com</span>
+                        </li>
+                    </ul>
+                    <button class="btn-ghost">Contact Agent</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>

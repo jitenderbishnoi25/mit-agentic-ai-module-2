@@ -6,65 +6,254 @@
     <title>Global Gen-AI Community</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Background Elements -->
-    <div class="bg-gradient-1"></div>
-    <div class="bg-gradient-2"></div>
+    <!-- Background Gradient -->
+    <div class="glass-bg"></div>
 
-    <nav class="navbar">
-        <div class="logo">Gen-AI Connect</div>
+    <nav class="navbar glass-pill">
+        <div class="logo">
+            <span class="logo-icon">✦</span> AURA
+        </div>
         <ul class="nav-links">
-            <li><a href="#">Models</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#" class="btn-primary">Join Now</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Learning</a></li>
         </ul>
+        <div class="user-profile">
+            <span class="bell-icon">🔔</span>
+            <div class="avatar"></div>
+            <span class="user-name">Alex R.</span>
+        </div>
     </nav>
 
     <header class="hero">
-        <h1 class="gradient-text">Empowering the Future of Generative AI</h1>
-        <p>Join the world's largest open community of developers, researchers, and AI enthusiasts. Share models, discuss patterns, and build tomorrow.</p>
+        <h1>Igniting the Future of AI, Together.</h1>
+        <p>Join a global network of innovators and creators shaping the next generation of artificial intelligence.</p>
         <div class="hero-cta">
-            <button class="btn-primary btn-large">Explore Models</button>
-            <button class="btn-secondary btn-large">Read the Docs</button>
+            <button class="btn-primary pill">Join the Community</button>
+            <button class="btn-secondary pill">Explore Projects</button>
         </div>
     </header>
 
-    <main class="dashboard">
-        <div class="dashboard-header">
-            <h2>Community Pulse</h2>
+    <section class="featured-projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <div class="carousel-nav">
+                <button class="nav-arrow">&lt;</button>
+                <button class="nav-arrow">&gt;</button>
+            </div>
         </div>
-        <div class="grid">
-            <div class="card stat-card">
-                <h3>Active Members</h3>
-                <div class="stat-value">245,039</div>
-                <div class="stat-change positive">+2,400 this week</div>
-            </div>
-            <div class="card stat-card">
-                <h3>Models Hosted</h3>
-                <div class="stat-value">12,490</div>
-                <div class="stat-change positive">+150 this week</div>
-            </div>
-            <div class="card feature-card">
-                <h3>Trending Discussion</h3>
-                <p class="thread-title">Optimizing LLMs for edge devices: Best Practices</p>
-                <div class="thread-meta">
-                    <span class="tag">Hardware</span>
-                    <span class="replies">342 replies</span>
+        <div class="project-carousel">
+            <!-- Project Card 1 -->
+            <div class="project-card glass-card">
+                <div class="project-image gradient-1"></div>
+                <div class="project-info">
+                    <h3>Neural Art Lab</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                    <div class="project-meta">
+                        <div class="avatars">
+                            <div class="avatar-mini"></div>
+                            <div class="avatar-mini"></div>
+                        </div>
+                        <span>12 updates</span>
+                    </div>
                 </div>
             </div>
-            <div class="card feature-card">
-                <h3>Top Model</h3>
-                <p class="thread-title">Nova-7B-Instruct</p>
-                <div class="thread-meta">
-                    <span class="tag">Language Model</span>
-                    <span class="replies">124k Downloads</span>
+            <!-- Project Card 2 -->
+            <div class="project-card glass-card">
+                <div class="project-image gradient-2"></div>
+                <div class="project-info">
+                    <h3>Cognitive Engine Beta</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 50%"></div></div>
+                    <div class="project-meta">
+                        <div class="avatars">
+                            <div class="avatar-mini"></div>
+                            <div class="avatar-mini"></div>
+                            <div class="avatar-mini"></div>
+                        </div>
+                        <span>4 active refs</span>
+                    </div>
                 </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="project-card glass-card">
+                <div class="project-image gradient-3"></div>
+                <div class="project-info">
+                    <h3>NLP Sentiment Core</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                    <div class="project-meta">
+                        <div class="avatars">
+                            <div class="avatar-mini"></div>
+                        </div>
+                        <span>Completed</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Card 4 -->
+            <div class="project-card glass-card">
+                <div class="project-image gradient-4"></div>
+                <div class="project-info">
+                    <h3>Vision X Models</h3>
+                    <div class="progress-bar"><div class="progress" style="width: 30%"></div></div>
+                    <div class="project-meta">
+                        <div class="avatars">
+                            <div class="avatar-mini"></div>
+                            <div class="avatar-mini"></div>
+                        </div>
+                        <span>In review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="dashboard-grid">
+        <!-- Column 1: Community Hub -->
+        <div class="grid-column">
+            <h2 class="col-title">Community Hub</h2>
+            <div class="glass-card column-card">
+                <div class="feed-item">
+                    <div class="feed-header">
+                        <div class="avatar-small"></div>
+                        <div class="feed-meta">
+                            <strong>Sarah Jenkins</strong>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+                    <p class="feed-body">Just published the new weights for the edge-optimized transformer model. Check out the benchmarks! <a href="#">See more</a></p>
+                    <div class="feed-actions">
+                        <span>❤️ 124</span>
+                        <span>💬 32</span>
+                    </div>
+                </div>
+                <div class="feed-item">
+                    <div class="feed-header">
+                        <div class="avatar-small"></div>
+                        <div class="feed-meta">
+                            <strong>David Chu</strong>
+                            <span>5 hours ago</span>
+                        </div>
+                    </div>
+                    <p class="feed-body">Anyone experiencing latency drops with the latest API wrapper update? Let's debug in the main thread.</p>
+                    <div class="feed-actions">
+                        <span>❤️ 45</span>
+                        <span>💬 18</span>
+                    </div>
+                </div>
+                <div class="feed-input">
+                    <div class="avatar-small"></div>
+                    <input type="text" placeholder="Add a comment...">
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 2: Global Events -->
+        <div class="grid-column">
+            <h2 class="col-title">Global Events</h2>
+            <div class="glass-card column-card no-pad">
+                <ul class="event-list">
+                    <li>
+                        <div class="event-day">Mon</div>
+                        <div class="event-tag blue-tag">
+                            <strong>Upcoming Meetups</strong>
+                            <span>10:00 AM PST</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="event-day">Tue</div>
+                        <div class="event-tag purple-tag">
+                            <strong>Model Fine-tuning Workshop</strong>
+                            <span>1:00 PM EST</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="event-day">Wed</div>
+                        <div class="event-tag orange-tag">
+                            <strong>AI Ethics Panel</strong>
+                            <span>9:00 AM UTC</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="event-day">Thu</div>
+                        <div class="event-tag green-tag">
+                            <strong>Hackathon Kickoff</strong>
+                            <span>All Day</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Column 3: Knowledge Base -->
+        <div class="grid-column">
+            <h2 class="col-title">Knowledge Base</h2>
+            <div class="glass-card column-card flex-col">
+                <a href="#" class="resource-link">
+                    <div class="resource-icon">📚</div>
+                    <div class="resource-text">
+                        <strong>Latest AI Research</strong>
+                        <span>Curated papers from top labs</span>
+                    </div>
+                    <div class="resource-arrow">→</div>
+                </a>
+                <a href="#" class="resource-link">
+                    <div class="resource-icon">⚡</div>
+                    <div class="resource-text">
+                        <strong>Optimization Guides</strong>
+                        <span>Reduce latency by 40%</span>
+                    </div>
+                    <div class="resource-arrow">→</div>
+                </a>
+                <a href="#" class="resource-link">
+                    <div class="resource-icon">🔧</div>
+                    <div class="resource-text">
+                        <strong>API Documentation</strong>
+                        <span>Connect your models easily</span>
+                    </div>
+                    <div class="resource-arrow">→</div>
+                </a>
+                <button class="btn-outline">Show More Resources</button>
             </div>
         </div>
     </main>
+
+    <footer class="glass-footer">
+        <div class="footer-brand">
+            <div class="logo"><span class="logo-icon">✦</span> AURA</div>
+            <div class="members-online">
+                <div class="avatars">
+                    <div class="avatar-mini"></div>
+                    <div class="avatar-mini"></div>
+                    <div class="avatar-mini"></div>
+                </div>
+                <span>4,291 members online</span>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="link-group">
+                <h4>Site Links</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+            </div>
+            <div class="link-group">
+                <h4>Legal Info</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Guidelines</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 AURA Community. All rights reserved.</span>
+            <div class="footer-legal-links">
+                <a href="#">Privacy</a> • <a href="#">Legal Info</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
