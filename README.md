@@ -20,17 +20,17 @@ mit-agentic-ai-module-2/
 
 ## 🌐 Applications
 
-### 1. Global Gen-AI Community
-A visual exploration into modern web design trends.
-- **Design System**: Light Translucent **Glassmorphism**.
-- **Aesthetics**: Floating pill-shaped navigation, vibrant background gradients (purple, electric blue, magenta), blurred translucent cards (`backdrop-filter: blur`), and dynamic hover animations.
-- **Layout**: Features a centered Hero section, a horizontal "Featured Projects" carousel with integrated progress bars, and a three-column widget grid (Community Hub, Global Events calendar, Knowledge Base).
-
-### 2. Insurance Policy Admin
+### 1. Insurance Policy Admin
 A highly polished, data-dense enterprise dashboard application.
 - **Design System**: Premium Enterprise Layout.
 - **Aesthetics**: High-contrast, clean white cards over a soft gray-blue (`#F4F7F9`) backdrop, utilizing Corporate Blue (`#0056D2`) for accents, and color-coded status badges for instant comprehension.
 - **Layout**: Employs a functional 70/30 asymmetrical grid. The main column houses the Policy Status summaries and a robust Transactions datatable. The right-hand column serves as a dedicated sidebar for Stakeholder Profile Cards (Owner and Agent specific details).
+
+### 2. Global Gen-AI Community
+A visual exploration into modern web design trends.
+- **Design System**: Light Translucent **Glassmorphism**.
+- **Aesthetics**: Floating pill-shaped navigation, vibrant background gradients (purple, electric blue, magenta), blurred translucent cards (`backdrop-filter: blur`), and dynamic hover animations.
+- **Layout**: Features a centered Hero section, a horizontal "Featured Projects" carousel with integrated progress bars, and a three-column widget grid (Community Hub, Global Events calendar, Knowledge Base).
 
 ## 🚀 How to Run Locally
 
